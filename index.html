@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <button type="button" onclick="handleListButtonClick('now_playing')">
+        현재상영작
+      </button>
+      <button type="button" onclick="handleListButtonClick('popular')">
+        무비차트
+      </button>
+      <button type="button" onclick="handleListButtonClick('top_rated')">
+        추천영화
+      </button>
+      <button type="button" onclick="handleListButtonClick('upcoming')">
+        상영예정
+      </button>
+    </div>
+
+    <div class="search">
+      <input id="searchInput" placeholder="영화 제목을 입력하세요" />
+      <button id="searchBtn">검색</button>
+    </div>
+
+    <section id="movieBoard"></section>
+    <button id="loadMoreBtn">더보기</button>
+    <script src="custom.js"></script>
+  </body>
+</html>
